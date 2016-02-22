@@ -1,0 +1,594 @@
+
+            /*======================================================
+            ========================================================
+                                     *
+            ========================================================
+            =======================================================*/
+*{
+font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.about, .about p , 
+.about h1 , .about-me , 
+.fixed-h1 , #mobile-version , 
+.arrow , input, textarea , span  {
+    
+    display:block;
+    margin:auto;
+    
+}
+body , .about , .title-name , .header ,
+.fadein , .fixed-h1 , .header h3 ,
+ input, textarea {
+     
+ background: url('../img/black_lozenge.png');
+    
+}
+.experiance  li img , .me , .about-me, .mobile-first, .fadein , .gallery img  {
+        box-shadow: 0px 10px 70px 5px #333;
+        -webkit-box-shadow: 0px 10px 70px 5px #111;
+        -moz-box-shadow: 0px 10px 70px 5px #111;
+    
+}
+
+
+
+
+body{
+ 
+    font-weight: bolder;
+    color:lightgrey;
+    
+    overflow: hidden;
+    
+}
+
+
+
+
+
+a {
+      color:lightgrey;
+}
+a:hover {
+    text-decoration: none;
+    color:#999;
+
+}
+a:click {
+    text-decoration: none;
+    color:#999;
+
+}
+
+h1{
+    
+    text-align: center;
+    color:lightgrey;
+}
+li{
+    list-style-type: none; 
+    font-size: 1.333em
+}
+
+
+.fixed{
+    width:100%;
+    height:100%;
+    margin-bottom: 10px;
+}
+
+
+#image-1{
+    background:url('../img/macbook.jpg');
+    min-height: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+    -webkit-box-shadow: ;
+    -moz-box-shadow:;
+     -webkit-box-shadow:inset 10px 0px 15px 0px #111, inset -10px 0px 15px #111;
+    -moz-box-shadow:inset 10px 0px 15px 0px #111, inset -10px 0px 15px #111;
+box-shadow: inset 10px 0px 15px 0px #111, inset -10px 0px 15px #111;
+
+}
+#image-2{
+    background:url('../img/bcode.jpg');
+    background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+    box-shadow: inset 2px 40px 70px #222;
+    -webkit-box-shadow:inset 10px 0px 15px 0px #111, inset -10px 0px 15px #111;
+    -moz-box-shadow:inset 10px 0px 15px 0px #111, inset -10px 0px 15px #111;
+box-shadow: inset 10px 0px 15px 0px #111, inset -10px 0px 15px #111;
+}
+#image-3{ 
+    background:url('../img/backdrop.jpg');
+    background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+    -webkit-box-shadow:inset 10px 0px 15px 0px #111, inset -10px 0px 15px #111;
+    -moz-box-shadow:inset 10px 0px 15px 0px #111, inset -10px 0px 15px #111;
+    box-shadow: inset 10px 0px 15px 0px #111, inset -10px 0px 15px #111;
+    
+}
+#image-4{ 
+    background:url('../img/FSPLFPQBCZ.jpg');
+    background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+    -webkit-box-shadow:inset 10px 0px 15px 0px #111, inset -10px 0px 15px #111;
+    -moz-box-shadow:inset 10px 0px 15px 0px #111, inset -10px 0px 15px #111;
+    box-shadow: inset 10px 0px 15px 0px #111, inset -10px 0px 15px #111;
+}
+
+.header img{
+    width:80px;
+    float: left;
+    margin-left: 10px;
+
+}
+.header , .title-name{
+        height:80px;
+        position: fixed;
+        top:0px;
+        width:100%;
+        z-index:5;
+        text-align: center;
+        box-shadow: 0px 10px 70px 5px #333;
+        -webkit-box-shadow: 0px 5px 20px 1px #111 ;
+        -moz-box-shadow: 0px 10px 70px 1px #111;
+        border-bottom: double 4px lightgrey;
+    
+}
+.header h3{
+float:left;
+    margin-left: 10px;
+}
+.header p , .title-name p {
+      
+        font-size: 1.133em;
+    
+}
+
+.header p:nth-of-type(1){
+   float:right;
+    
+    margin-right: 20px;
+
+}
+
+
+.loadscreen{
+    position: fixed;
+    top:0px;
+    width:100%;
+    height:100%;
+    z-index: 18;
+    background: #111;
+        
+}
+.loadscreen h2{
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        width:110px;
+        display: block;
+        margin:auto;
+        animation: blinker 2200ms linear both;
+        animation-iteration-count: infinite;
+}
+
+
+
+            /*======================================================
+            ========================================================
+                                TITLE-SCREEN
+            ========================================================
+            =======================================================*/
+
+
+
+
+.about-me{
+    
+        border:double 8px grey;
+        margin-bottom: 10%;
+        max-width:650px;
+        width:90%;
+        font-size: 1.233em;
+        text-align: center; 
+    background:url(..//img/black_linen_v2.png);
+}
+.about-me p{
+padding: 30px;
+
+}
+
+.me{
+    
+        display: block;
+        margin: auto;
+        margin-right: 15%;
+        margin-left: 10px;
+        margin-top: 5%;
+        width:50%;
+        max-width:240px;
+        float:right;
+        border: double darkgrey 9px;
+
+}
+
+            /*======================================================
+            ========================================================
+                                    Services
+            ========================================================
+            =======================================================*/
+.services{
+        text-align: left;
+        margin-left: 5%;
+        font-weight: bold;
+        height:50px;
+        max-width:400;
+        margin-bottom: 5%;
+}
+.container{
+ display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.mobile-first{
+        cursor: pointer;
+        position: relative;
+        background:#222;
+        background:#1E1E20;
+        background:url(..//img/black_linen_v2.png);
+        text-align: center;
+        min-height:325;  
+        width:49.5%;
+        margin:3px auto;  
+}
+
+.mobile-first h1{
+font-size: 1.4em;
+}
+
+
+
+
+#mobile-version{
+        display: block;
+        position: relative;
+        width:300px;
+        max-width:100%;
+        object-fit: cover;  
+}
+
+.fixed-h1{
+    
+        width:300px;
+        max-width: 400px;
+        max-height: 120px;
+        border: double darkgrey 9px; 
+        vertical-align: middle;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        box-shadow: 0px 10px 50px 5px #333;
+        -webkit-box-shadow: 0px 10px 50px 5px #333;
+        -moz-box-shadow: 0px 10px 50px 5px #333;
+
+}
+
+.fixed-h1 h1{
+        position: relative;
+        top: 50%;
+        font-size: 2em;
+    
+}
+
+
+
+
+.fadein{
+        width:100%;
+        height:100%;
+        opacity:.9;
+        z-index: 1;
+        position: absolute;
+        top:0px;
+        left:0px;      
+    
+}
+
+.fadein p{
+        text-align: center;
+        width:60%;
+        padding-top: 10px;
+        display: block;
+        margin: 5% auto;
+        position: relative;
+        top: 35%;
+        transform: translateY(-50%);
+    font-size: 1.133em;
+}
+.credit{
+        text-align: center;
+}
+.credit li{
+        width:150;
+        margin: 5% auto;
+}
+
+
+   .gallery{ width:100%;
+       min-height: 100%;
+display: -webkit-inline-flex; 
+  display: inline-flex;
+       
+       -webkit-flex-direction: row; 
+  flex-direction: row;
+       
+       -webkit-flex-wrap: wrap; 
+  flex-wrap: wrap;
+         -webkit-justify-content: center; 
+  justify-content: center;
+       -webkit-align-items: center; /* Safari */
+  align-items:         center;
+  
+   }
+
+
+   .gallery img {
+         width:500;
+         border: double grey 8px;
+         max-width: 100%;
+   }   
+
+footer{
+        clear: both;
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+}
+
+
+
+
+
+            /*======================================================
+            ========================================================
+                                 Get a Quote
+            ========================================================
+            =======================================================*/
+
+
+input, textarea{
+    
+        border:none;
+        text-align: center;
+        border-bottom:solid #444 4px; 
+        width:95%;
+        max-width: 500px;
+        
+}
+input:focus, textarea:focus{
+    
+        outline:none;
+
+}
+form p {
+    
+        text-align: center;
+}
+form p:nth-child(1){
+    
+        margin-top:8%;
+} 
+input{
+    
+        width: 80%;
+        max-width: 475px;
+
+}
+
+
+.send{
+    
+        margin-top:-4%;
+        text-align: center;
+        width:100px;
+        border:solid grey 1px;
+        background:rgba( 250,250,250,.2);
+        border-radius: 2px;
+}
+   
+span{
+        background:rgba( 179, 25, 0, .2 );
+        border-radius: 5px;
+        padding:6px;
+        max-width:90%;
+        text-align: center;
+}
+
+.quote{
+    
+        clear: both;
+    }
+
+h5{
+    
+        padding:10px;
+    
+}
+
+     /*======================================================
+            ========================================================
+                                     @MEDIA
+            --------------------------------------------------------
+
+                             IPHONE 4S AND SMLALLER
+                                    320x480
+            ========================================================
+            =======================================================*/
+@media only screen and (max-width:680px)
+    and (orientation: portrait){
+   .fadein p{
+        width:80%;    
+}
+}
+
+@media only screen and (max-width:580px)
+ and (orientation: portrait)
+{
+    .me{
+    
+        display: block;
+        margin: auto;
+        margin-bottom: 15px;
+        float:none;
+        
+
+}
+    .fadein p{
+        width:80%;    
+}
+ 
+.about{
+    
+    width:100%;
+    height:110%;
+}
+    
+.about p {
+    
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+    
+}
+
+    
+.about h1{
+    
+    padding-bottom: 5%;
+    width:250px;    
+    text-align: center;
+   
+}
+.about-me{
+
+    width:100%;
+    background:url(..//img/black_linen_v2.png);
+}
+.about-me p{
+    
+    padding:50px;
+    
+}
+
+.experiance ul{
+        
+    margin-left:-40px;
+     
+    }
+
+.experiance  li img{
+    
+    width:80px;
+   
+}
+
+
+
+
+.mobile-first{ 
+    
+    min-height:230px;
+  
+    
+}   
+    
+.mobile-first h1{
+   
+    font-size: 1.333em;
+    
+}
+
+
+
+}
+
+
+@media only screen and (max-width:950px){
+    
+.experiance {
+    
+  width:100%;
+    
+}  
+    
+}
+
+@media only screen and (min-width:495px){
+   
+    
+    .header p , .title-name p {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+       
+    
+}
+    
+
+}
+    
+    
+
+@media only screen and (min-height: 20px) and (orientation: landscape)
+{
+ 
+ 
+   .about {
+       
+    height:200%;
+}
+   
+  
+}
+        
+
+
+
+
+
+/*======================================================
+========================================================
+                      @Keyframes
+========================================================
+=======================================================*/
+
+
+@-moz-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
